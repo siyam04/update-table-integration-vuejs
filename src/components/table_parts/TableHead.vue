@@ -2,8 +2,9 @@
 
     <thead>
         <tr>
-            <th v-for="(item, i) in headerContent" v-bind:key="i" scope="col" @click="sorting(item)">
-                <a href="#">{{item}}</a>
+            <th v-if="headerContents.serialActivate">SL</th>
+            <th v-for="(item, i) in headerContents.header" :key="i" scope="col" @click="sorting(item)">
+                <router-link to="#">{{item}}</router-link>
             </th>
         </tr>
     </thead>
@@ -12,16 +13,21 @@
 
 
 <script>
+
     export default {
         name: "TableBody",
-        props: ['headerContent'],
-
+        props: ['headerContents'],
         methods: {
             sorting(param){
                 console.log(param)
 
             }
-        }
+        },
+        data () {
+            return {
+                showHide: true
+            }
+        },
     }
 </script>
 

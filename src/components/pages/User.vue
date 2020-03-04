@@ -6,9 +6,8 @@
             <br><br>
 
             <table class="table">
-                <TableHead v-bind:headerContent="headerContent"></TableHead>
-                <!--<TableBody v-bind:bodyContent="bodyContent" v-bind:headerContent="headerContent"></TableBody>-->
-                <TableBody v-bind:contents="{header: headerContent, body: bodyContent}"></TableBody>
+                <TableHead v-bind:headerContents="{header: headerContent, serialActivate: true}"></TableHead>
+                <TableBody v-bind:contents="{header: headerContent, body: bodyContent, serialActivate: true}"></TableBody>
             </table>
 
             <button class="btn btn-dark">
@@ -33,7 +32,6 @@
         data() {
             return {
                 headerContent: {
-                    serial: 'SERIAL',
                     name: 'NAME',
                     age: 'AGE',
                 },
@@ -41,15 +39,12 @@
                     {
                         age: '20',
                         name: 'Mostaq',
-                        serial: '1',
                     },
                     {
                         name: 'Tazel',
                         age: '23',
-                        serial: '2',
                     },
                     {
-                        serial: '3',
                         age: '66',
                         name: 'Karim',
                     },
