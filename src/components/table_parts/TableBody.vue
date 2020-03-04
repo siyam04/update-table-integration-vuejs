@@ -1,6 +1,5 @@
 <template>
     <tbody>
-    <!--    <p>{{contents}}</p>-->
     <tr v-for="(item, i) in contents.body" v-bind:key="i">
 
         <td v-for="(data, key) in contents.header" v-bind:key="key">
