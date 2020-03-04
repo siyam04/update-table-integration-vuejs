@@ -1,18 +1,20 @@
 <template>
 
     <div class="container">
-        <h1>Players</h1>
-        <br><br>
+        <div class="jumbotron">
+            <h1>Players</h1>
+            <br><br>
 
-        <table class="table">
-            <TableHead v-bind:headerContent="headerContent"></TableHead>
-            <TableBody v-bind:bodyContent="bodyContent">></TableBody>
-        </table>
+            <table class="table">
+                <TableHead v-bind:headerContent="headerContent"></TableHead>
+                <TableBody v-bind:bodyContent="bodyContent" v-bind:headerContent="headerContent">></TableBody>
+            </table>
 
-        <button class="btn btn-dark">
-            <router-link :to="{name: 'User'}">GoTo User</router-link>
-        </button>
+            <button class="btn btn-dark">
+                <router-link :to="{name: 'User'}">GoTo User</router-link>
+            </button>
 
+        </div>
     </div>
 
 </template>
@@ -35,19 +37,19 @@
                 },
                 bodyContent: [
                     {
-                        player_name: 'data',
-                        serial: 'data',
-                        score: 'data',
+                        player_name: 'Maruf',
+                        serial: '1',
+                        score: '100',
                     },
                     {
-                        serial: 'data',
-                        player_name: 'data',
-                        score: 'data',
+                        serial: '2',
+                        player_name: 'Julu',
+                        score: '80',
                     },
                     {
-                        score: 'data',
-                        serial: 'data',
-                        player_name: 'data',
+                        score: '50',
+                        serial: '3',
+                        player_name: 'Tajal',
                     },
                 ]
             }

@@ -1,18 +1,20 @@
 <template>
 
     <div class="container">
+        <div class="jumbotron">
+            <h1>Users</h1>
+            <br><br>
 
-        <h1>Users</h1>
-        <br><br>
+            <table class="table">
+                <TableHead v-bind:headerContent="headerContent"></TableHead>
+                <TableBody v-bind:bodyContent="bodyContent" v-bind:headerContent="headerContent"></TableBody>
+            </table>
 
-        <table class="table">
-            <TableHead v-bind:headerContent="headerContent"></TableHead>
-            <TableBody v-bind:bodyContent="bodyContent" v-bind:headerContent="headerContent"></TableBody>
-        </table>
+            <button class="btn btn-dark">
+                <router-link :to="{name: 'Players'}">GoTo Players</router-link>
+            </button>
 
-        <button class="btn btn-dark">
-            <router-link :to="{name: 'Players'}">GoTo Players</router-link>
-        </button>
+        </div>
     </div>
 
 </template>
@@ -37,17 +39,17 @@
                 bodyContent: [
                     {
                         age: '20',
-                        serial: '1',
                         name: 'Mostaq',
+                        serial: '1',
                     },
                     {
+                        name: 'Tazel',
                         age: '23',
                         serial: '2',
-                        name: 'Tazel',
                     },
                     {
-                        age: '66',
                         serial: '3',
+                        age: '66',
                         name: 'Karim',
                     },
                 ]
