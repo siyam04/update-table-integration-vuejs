@@ -51,6 +51,11 @@
                         serial: '3',
                         player_name: 'Tajal',
                     },
+                    {
+                        score: '60',
+                        serial: '4',
+                        player_name: 'Sayket',
+                    },
                 ]
             }
         }

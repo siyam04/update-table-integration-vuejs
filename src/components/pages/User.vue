@@ -7,7 +7,8 @@
 
             <table class="table">
                 <TableHead v-bind:headerContent="headerContent"></TableHead>
-                <TableBody v-bind:bodyContent="bodyContent" v-bind:headerContent="headerContent"></TableBody>
+                <!--<TableBody v-bind:bodyContent="bodyContent" v-bind:headerContent="headerContent"></TableBody>-->
+                <TableBody v-bind:contents="{header: headerContent, body: bodyContent}"></TableBody>
             </table>
 
             <button class="btn btn-dark">
@@ -63,3 +64,5 @@
 <style scoped>
 
 </style>
+
+
