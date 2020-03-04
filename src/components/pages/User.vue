@@ -7,7 +7,7 @@
 
         <table class="table">
             <TableHead v-bind:headerContent="headerContent"></TableHead>
-            <TableBody v-bind:bodyContent="bodyContent"></TableBody>
+            <TableBody v-bind:bodyContent="bodyContent" v-bind:headerContent="headerContent"></TableBody>
         </table>
 
         <button class="btn btn-dark">
@@ -36,19 +36,19 @@
                 },
                 bodyContent: [
                     {
-                        serial: 'data',
-                        name: 'data',
-                        age: 'data',
+                        age: '20',
+                        serial: '1',
+                        name: 'Mostaq',
                     },
                     {
-                        serial: 'data',
-                        name: 'data',
-                        age: 'data',
+                        age: '23',
+                        serial: '2',
+                        name: 'Tazel',
                     },
                     {
-                        serial: 'data',
-                        name: 'data',
-                        age: 'data',
+                        age: '66',
+                        serial: '3',
+                        name: 'Karim',
                     },
                 ]
 

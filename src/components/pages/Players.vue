@@ -35,19 +35,19 @@
                 },
                 bodyContent: [
                     {
+                        player_name: 'data',
                         serial: 'data',
-                        name: 'data',
-                        age: 'data',
+                        score: 'data',
                     },
                     {
                         serial: 'data',
-                        name: 'data',
-                        age: 'data',
+                        player_name: 'data',
+                        score: 'data',
                     },
                     {
+                        score: 'data',
                         serial: 'data',
-                        name: 'data',
-                        age: 'data',
+                        player_name: 'data',
                     },
                 ]
             }
